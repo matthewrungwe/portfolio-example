@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Matthew's Portfolio</title>
+
+        <!-- Page styles -->
+        <style>
+            /* Global styles */
+            body{
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .about-me, .education, .skills,.contact{
+                width: 80%;
+                margin: 0 auto;
+                padding-top: 10px;
+            }
+
+            h1{
+                text-align: center;
+                text-decoration: underline;
+                color:  #1d9cd2;
+                font-size: 2em;
+
+            }
+            
+            p{
+                font-size: 18px;
+                line-height: 1.5;
+            }            
+            /* Global styles end */
+
+            /* Header */
+            header{
+                height: 15vh;
+                background-color: #1d9cd2;
+            }
+
+            .author{
+                position: relative;
+                top: 40%;
+                color: white;
+                font-size: 18px;
+                padding-left: 5px;
+            }
+            /* Header end */
+
+            /* Main */
+            /* Poster section */
+            .poster-section{
+                display: flex;
+                width: 100%;
+                height: 80vh
+            }
+
+            .speciality{
+                flex: 1.5;
+                background-color: #217CA3;
+            }
+
+            .speciality p{
+                position: relative;
+                top: 40%;
+                color: white;
+                font-weight: 500;
+                font-size: 24px;
+                margin: 0;
+                text-align: center;
+            }
+
+            .theme{
+                flex: 1;
+                background-color: #217CA3;
+                height: 100%
+            }
+
+            .layover{
+                background-color: rgba(51, 51, 51, 0.5);
+                height: 100%;
+                width: 100%;
+            }
+            /* Poster section end */
+
+            /* About me section */
+            .about-content-wrap{
+                display: flex;
+            }
+
+            .about-img{
+                width: 255px;
+                margin: 0 auto;
+            }
+
+            .about-img-placeholder{
+                width: 250px;
+                height: 250px;
+                border-radius: 100%;
+                background-color: #1d9cd2;
+                margin: 0 auto;
+            }
+
+            .about-img-shell{
+                flex: 1;
+            }
+
+            .about-content{
+                flex: 1;
+            }
+
+            .about-content p{
+                font-size: 18px;
+                line-height: 1.5;
+                text-align: justify;
+            }
+            /* About me section end */
+
+
+            /* Education section */
+            .institution{
+                display: flex;
+            }
+
+            .institute-n-program{
+                flex: 1;
+            }
+
+            .institute-n-program p{
+                text-align: center;
+            }
+
+            .institute-n-program p a{
+                text-decoration: none;
+                color: #1d9cd2;
+            }
+            
+            .institute-n-program p a:hover{
+                text-decoration: none;
+                color: #217CA3;
+            }
+
+            .institute-n-program p:nth-child(1){
+                font-size: 20px;
+                font-weight: 600;
+            }
+
+            .institute-n-program p:nth-child(2){
+                font-style: italic;
+            }
+
+            .more-info{
+                flex: 1.2;
+            }
+            /* Education section end */
+            
+            /* Skills section */
+            .skills{
+                height: 250px
+            }
+
+            .list{
+                width: 90%;
+                margin: 0 auto;
+                padding: 0 0 0 17%;
+            }
+            
+            ol{
+                display: inline;
+            }
+
+            ol li{
+                color: white;
+                text-align: center;
+                list-style-type: none;
+                width: 26vw;
+                height: 30px;
+                float: left;
+                background-color: #1d9cd2;
+                padding-top: 5px;
+            }
+
+            ol li:hover{
+                background-color: #217CA3;
+                font-size: 18px;
+            }
+            /* Skills section end */
+
+            /* Contact section */
+            .contact{
+                clear: both;
+            }
+
+            .contact a{
+                color: #1d9cd2;
+            }
+            /* Contact section end */
+            /* Main end */
+
+            /* Footer */
+            footer{
+                background-color: #1d9cd2;
+                height: 15vh;
+                padding-top: 10px;
+            }
+
+            footer p{
+                color: white;
+                font-size: 12px;
+                text-align: center;
+            }
+            /* Footer end */
+
+            @media screen and (max-width: 768px){
+                h1{
+                    font-size: 1.7em;
+                }
+
+                .about-content-wrap{
+                    display: flex;
+                    flex-flow: column;
+                }
+                                
+                .institution{
+                    display: flex;
+                    flex-flow: column;
+                }
+
+                .institute-n-program p{
+                    text-align: left;
+                }
+
+                .about-me p{
+                    font-size: 16px;
+                    line-height: 1.3;
+                    text-align: center;
+                }
+            }
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <div class="author">
+                <p>Matthew Rungwe</p>
+            </div>            
+        </header>
+
+        <main>
+            <section class="poster-section">                
+                    <div class="speciality">
+                        <div class="layover">
+                            <p>I am a Full-Stack Web Developer</p>
+                        </div>
+                    </div>
+                    <div class="theme"></div>
+            </section>
+
+            <section class="about-me">
+                <h1>Who am I?</h1>
+                <div class="about-content-wrap">
+                    <div class="about-img-shell">
+                        <div class="about-img">
+                            <img class="about-img-placeholder" src="./assets/programmer2.png" alt="Programmer">
+                        </div>    
+                    </div>
+                    <div class="about-content">
+                        <p>
+                            I am beginner in Full-Stack Web Development. This gift, coding, has given
+                            me the chance to decipher ideas into something more presentable. 
+                        </p>
+                        <p>
+                           I love learning and sharing. I ask a lot of questions. I spend hours on problems
+                           and loose track of time during projects. I value all that I have and always grateful 
+                           that God gave me the life that I have.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="education">
+                <h1>Education</h1>
+                <div class="institution">
+                    <div class="institute-n-program">
+                        <p><a href="http://hyperiondev.com" target="_blank">Hyperion Development</a></p>
+                        <p>Full-Stack Web Development</p>
+                    </div>
+                    <div class="more-info">
+                        <p>March 2020 - Current</p>
+                        <p>In-progress</p>
+                    </div>
+                </div>
+                <hr>
+            
+                <div class="institution">
+                    <div class="institute-n-program">
+                        <p><a href="http://pluralsight.com" target="_blank">Pluralsight</a></p>
+                        <p>Mobile Web Specialist</p>
+                    </div>
+                    <div class="more-info">
+                        <p>May 2019 - Current</p>
+                        <p>In-progress</p>
+                    </div>
+                </div>
+                <hr>
+            
+                <div class="institution">
+                    <div class="institute-n-program">
+                        <p><a href="http://udacity.com" target="_blank">Udacity</a></p>
+                        <p>Front-End Web Development</p>
+                    </div>
+                    <div class="more-info">
+                        <p>May 2018 - November 2018</p>
+                        <p>In-progress</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="skills">
+                <h1>Skills</h1>
+
+                <p>I am proficient in the use of the following languages:</p>
+                <div class="list">
+                    <ol>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>Less</li>
+                        <li>Angular</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                    </ol>
+                </div>
+            </section>
+            
+            <section class="contact">
+                <h1>Contact</h1>
+                <p>
+                    This is an email link: 
+                    <a href="mailto:matthewrungwe@gmail.com?Subject=Hello%20again" target="_top">Send Mail</a> 
+                </p>
+            </section>
+        </main>
+        
+        <footer>
+            <p>Sample Portfolio site by Matthew Rungwe</p>
+            <p>Inspired by Hyperion Development</p>
+        </footer>
+    </body>
+</html>
